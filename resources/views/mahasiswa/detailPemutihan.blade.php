@@ -24,7 +24,7 @@
                         <img class="card-img-top gambar mx-auto d-block" src="{{ asset('images_pemutihan/'. $pemutihan->foto_pemutihan) }}" alt="" width="80%">
                         <div class="row">
                             <div class="col mx-5 mb-8">
-                                <p class="card-text">{{$pemutihan->konten_pemutihan}}</p>
+                                <p class="card-text">{!!$pemutihan->konten_pemutihan!!}</p>
                             </div>
                         </div>
                     </div>

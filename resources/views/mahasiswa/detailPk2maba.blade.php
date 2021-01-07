@@ -24,7 +24,7 @@
                         <img class="card-img-top gambar mx-auto d-block" src="{{ asset('images_pk2maba/'. $pk2maba->foto_pk2maba) }}" alt="" width="80%">
                         <div class="row">
                             <div class="col mx-5 mb-8">
-                                <p class="card-text">{{$pk2maba->konten_pk2maba}}</p>
+                                <p class="card-text">{!!$pk2maba->konten_pk2maba!!}</p>
                             </div>
                         </div>
                     </div>

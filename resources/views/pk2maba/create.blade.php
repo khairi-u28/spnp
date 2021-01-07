@@ -25,7 +25,7 @@
                         <div class="form-group row">
                             <label for="konten_pk2maba" class="col-md-2 col-form-label text-md-right">Isi Konten</label>
                             <div class="col-md-6">
-                                <textarea class="form-control" id="konten_pk2maba" name="konten_pk2maba" rows="5" required autocomplete="konten_pk2maba" autofocus></textarea>
+                                <textarea class="ckeditor form-control" id="konten_pk2maba" name="konten_pk2maba" rows="5" required autocomplete="konten_pk2maba" autofocus></textarea>
                             </div>                            
                         </div>
 

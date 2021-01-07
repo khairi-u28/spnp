@@ -16,7 +16,7 @@ class MhsController extends Controller
         $response = Http::get('http://localhost:8048/api/cariNilai', [
             'nim' => $request->cariNim,
         ]);
-        $nilai = json_decode($response->getBody(true)->getContents());        
+        $nilai = json_decode($response->getBody(true)->getContents());
 
         if (isset($nilai->nim)) {
             return view('mahasiswa.cariNilai', compact('nilai'));

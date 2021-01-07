@@ -1,3 +1,4 @@
+
 @extends('layouts.app')
 
 @section('content')
@@ -18,23 +19,23 @@
         <div class="col-md-12">
             <div class="card">
                 <div class="card-header">Tambah Data Info Pemutihan</div>
-
+                
                 <div class="card-body">
                     <form method="POST" action="{{ url('pemutihan') }}" enctype="multipart/form-data">
-                        @csrf
+                    @csrf
+                    
+                    <div class="form-group row">
+                        <label for="judul_pemutihan" class="col-md-2 col-form-label text-md-right">Judul Konten</label>
 
-                        <div class="form-group row">
-                            <label for="judul_pemutihan" class="col-md-2 col-form-label text-md-right">Judul Konten</label>
-
-                            <div class="col-md-6">
+                        <div class="col-md-6">
                                 <input id="judul_pemutihan" type="text" class="form-control" name="judul_pemutihan" required autocomplete="judul_pemutihan" autofocus>                                
                             </div>
                         </div>
-
+                        
                         <div class="form-group row">
                             <label for="konten_pemutihan" class="col-md-2 col-form-label text-md-right">Isi Konten</label>
                             <div class="col-md-6">
-                                <textarea class="form-control" id="konten_pemutihan" name="konten_pemutihan" rows="5" required autocomplete="konten_pemutihan" autofocus></textarea>
+                                <textarea class="form-control ckeditor" id="konten_pemutihan" name="konten_pemutihan" rows="5" required autocomplete="konten_pemutihan" autofocus></textarea>
                             </div>                            
                         </div>
 

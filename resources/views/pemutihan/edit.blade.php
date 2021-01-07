@@ -33,7 +33,7 @@
                         <div class="form-group row">
                             <label for="konten_pemutihan" class="col-md-2 col-form-label text-md-right">Isi Konten</label>
                             <div class="col-md-6">
-                                <textarea class="form-control" id="konten_pemutihan" name="konten_pemutihan" rows="5" value="{{ $pemutihan->konten_pemutihan }}" required autocomplete="current-konten_pemutihan">{{ $pemutihan->konten_pemutihan }}</textarea>
+                                <textarea class="ckeditor form-control" id="konten_pemutihan" name="konten_pemutihan" rows="5" value="{{ $pemutihan->konten_pemutihan }}" required autocomplete="current-konten_pemutihan">{{ $pemutihan->konten_pemutihan }}</textarea>
                             </div>
                         </div>
 

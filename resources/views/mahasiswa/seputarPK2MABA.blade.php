@@ -2,9 +2,15 @@
 <html lang="en">
 
 <head>
-    @include('includes.mhsHead')    
+    @include('includes.mhsHead')
     <title>SPNP | Seputar PK2MABA</title>
-
+    <style>
+        .gambar {
+            width: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
+    </style>
 </head>
 
 <body>
@@ -22,15 +28,16 @@
                             <h6 class="text-biru"><strong>SEPUTAR PK2MABA</strong></h6>
                             <h1 class="featurette-heading">Pengenalan Kehidupan Kampus Bagi Mahasiswa Baru</h2>
                                 <h6 class="lead"><span class="text-muted">PK2MABA merupakan proses orientasi bagi mahasiswa baru Fakultas Ilmu Komputer Universitas Brawijaya.</span></h6>
-                                <a class="btn btn-outline-secondary" href="">Selengkapnya</a>
+                                <a class="btn btn-outline-secondary" href="{{ url('/seputarpk2maba/8/detail')}}">Selengkapnya</a>
                                 <hr>
                                 <p><span class="text-muted">Cek informasi-informasi mengenai PK2MABA lainnya dengan <i>scroll down</i> halaman ini.</span></p>
                         </div>
                         <div class="col-md-5 order-md-1 mb-3">
-                            <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false">
+                            <img class="gambar" width="500" height="500" src="{{ asset('images_pk2maba/img_pk2maba_1608870918523.png') }}" alt="Cover Info Pemutihan">
+                            <!-- <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false">
                                 <title>Placeholder</title>
                                 <rect width="100%" height="100%" fill="#eee" />
-                            </svg>
+                            </svg> -->
                         </div>
                     </div>
                 </div>
@@ -50,11 +57,11 @@
                                 <h6 class="lead"><span class="text-muted">Posted on {{$pk2maba->created_at}}</span></p>
                             </div>
                             <div class="col-md-5 order-md-1 mb-3">
-                                <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false">
+                                <img class="gambar" width="500" height="250" src="{{ asset('images_pk2maba/'. $pk2maba->foto_pk2maba) }}" />
+                                <!-- <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false">
                                     <title>Placeholder</title>
                                     <rect width="100%" height="100%" fill="#eee" />
-                                </svg>
-
+                                </svg> -->
                             </div>
                         </div>
                         <hr class="featurette-divider">

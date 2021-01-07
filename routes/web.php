@@ -33,6 +33,8 @@ Route::post('/cariNilai', 'MhsController@cariNilai');
 
 // SIAM
 Route::post('/ceksiam', 'SIAMController@cekSIAM');
+Route::post('/ceksiam2', 'SIAMController@cekSIAM2');
+Route::post('/ceksiam3', 'SIAMController@cekSIAM4');
 
 // Info Pemutihan
 Route::get('/infopemutihan', 'MhsController@indexPemutihan');

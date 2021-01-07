@@ -4,6 +4,14 @@
 <head>
     @include('includes.mhsHead')
     <title>SPNP | Info Pemutihan</title>
+
+    <style>
+        .gambar {
+            width: 100%;            
+            object-fit: cover;
+            object-position: center;
+        }
+    </style>
 </head>
 
 <body>
@@ -26,10 +34,11 @@
                                 <p><span class="text-muted">Cek informasi-informasi mengenai pemutihan lainnya dengan <i>scroll down</i> halaman ini.</span></p>
                         </div>
                         <div class="col-md-5 order-md-1 mb-3">
-                            <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false">
-                                <title>Placeholder</title>
+                            <img class="gambar" width="500" height="500" src="{{ asset('images_pemutihan/img_pemutihan_1608721477707.jpeg') }}" alt="Cover Info Pemutihan">
+                            <!-- <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false">
+                                <title>Apa itu Pemutihan?</title>
                                 <rect width="100%" height="100%" fill="#eee" />
-                            </svg>
+                            </svg> -->
                         </div>
                     </div>
                 </div>
@@ -49,11 +58,11 @@
                                 <h6 class="lead"><span class="text-muted">Posted on {{$pemutihan->created_at}}</span></p>
                             </div>
                             <div class="col-md-5 order-md-1 mb-3">
-                                <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false">
-                                    <title>Placeholder</title>
-                                    <rect width="100%" height="100%" fill="#eee" />
-                                </svg>
-
+                                <img class="gambar" width="500" height="250" src="{{ asset('images_pemutihan/'. $pemutihan->foto_pemutihan) }}" />
+                                <!-- <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"> -->
+                                    <!-- <title>Placeholder</title> -->
+                                    <!-- <rect width="100%" height="100%" fill="#eee" /> -->
+                                <!-- </svg> -->
                             </div>
                         </div>
                         <hr class="featurette-divider">
